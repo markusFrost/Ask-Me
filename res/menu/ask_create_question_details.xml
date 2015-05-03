@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_ask_create_question_ok" android:title="OK" android:showAsAction="always"></item>
+
+</menu>

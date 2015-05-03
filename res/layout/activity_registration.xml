@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ll_with_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/registration_tv_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/color_green_turquoise"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/string_main_page_logo"
+                    android:textColor="@color/color_show"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/registration_tv_pass_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_braun"
+                android:gravity="center_horizontal"
+                android:text="@string/string_registration_otherPoassw"
+                android:textColor="@color/color_show"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_with_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/registration_tv_forget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/string_registration"
+                    android:textColor="@color/color_show"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+                <FrameLayout
+                    android:id="@+id/frameSearch4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/registration_edit_email"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:drawableLeft="@drawable/ic_registration_man"
+                        android:hint="@string/string_registration_enter_email"
+                        android:inputType="textEmailAddress" />
+
+                    <Button
+                        android:id="@+id/registration_clear_email"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ic_clear"
+                        android:onClick="onClick" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameSearch3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/registration_edit_login"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:drawableLeft="@drawable/ic_registration_man"
+                        android:hint="@string/string_registration_enter_login"
+                        android:inputType="textPersonName" />
+
+                    <Button
+                        android:id="@+id/registration_clear_login"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ic_clear"
+                        android:onClick="onClick" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameSearch5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/registration_editPassword"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:drawableLeft="@drawable/ic_registration_castle"
+                        android:hint="@string/string_registration_enter_password"
+                        android:inputType="textPassword" />
+
+                    <Button
+                        android:id="@+id/registration_clear_password"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ic_clear"
+                        android:onClick="onClick" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameSearch6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:padding="2dp" >
+
+                    <EditText
+                        android:id="@+id/registration_repeat_password"
+                        style="@style/editTextStyle"
+                        android:layout_width="match_parent"
+                        android:drawableLeft="@drawable/ic_registration_castle"
+                        android:hint="@string/string_registration_repeat_password"
+                        android:inputType="textPassword" />
+
+                    <Button
+                        android:id="@+id/registration_clear_repeat_pass"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ic_clear"
+                        android:onClick="onClick" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/registration_btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_join_selector"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="onClick"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/string_registration_btn_submit"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

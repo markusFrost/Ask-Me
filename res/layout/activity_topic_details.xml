@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_det_ll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topic_det_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/create_question_button_add_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_join_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/string_topic_ask" />
+
+        <TextView
+            android:id="@+id/create_question_tv_topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/string_topic_det_buisness"
+            android:textColor="@color/color_show"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/topic_edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_selector"
+                android:drawableLeft="@drawable/ic_search_edit"
+                android:hint="Search"
+                android:inputType="textCapSentences"
+                android:paddingLeft="5dp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_join_drawable_normal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color_show"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/topic_btn_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colors_dark_red"
+                    android:onClick="onRBViewClick"
+                    android:text="New"
+                    android:textColor="@color/color_show"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/topic_btn_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_join_drawable_normal"
+                    android:onClick="onRBViewClick"
+                    android:text="Answer"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/topic_btn_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_join_drawable_normal"
+                    android:onClick="onRBViewClick"
+                    android:text="Popular"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/topic_det_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/topic_det_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

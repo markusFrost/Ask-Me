@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_page_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateQuizActivity" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/create_quitz_chose_topic"
+            style="@style/tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/string_quiz_chose" />
+
+        <Button
+            android:id="@+id/create_quitz_arrow_ct"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/create_quitz_chose_topic"
+            android:layout_alignBottom="@+id/create_quitz_chose_topic"
+            android:layout_alignRight="@+id/create_quitz_chose_topic"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_topic_next" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_quitz_about"
+        style="@style/tv_style"
+        android:layout_marginLeft="3dp"
+        android:text="@string/string_quiz_about" />
+
+    <TextView
+        android:id="@+id/create_quitz_ask_sms"
+        style="@style/tv_style"
+        android:layout_marginLeft="3dp"
+        android:text="@string/string_quiz_ask_sms" />
+
+    <TextView
+        android:id="@+id/create_quitz_photo_here"
+        style="@style/tv_style"
+        android:layout_marginLeft="3dp"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/create_quitz_ask"
+            style="@style/tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/string_quiz_ask" />
+
+        <Button
+            android:id="@+id/create_quitz_arrow_ask"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/create_quitz_ask"
+            android:layout_alignBottom="@+id/create_quitz_ask"
+            android:layout_alignRight="@+id/create_quitz_ask"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_topic_next" />
+
+        <TextView
+            android:id="@+id/create_quitz_tv_ask_categoty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/create_quitz_ask"
+            android:layout_alignBottom="@+id/create_quitz_ask"
+            android:layout_toLeftOf="@+id/create_quitz_arrow_ask"
+            android:text="All" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/create_quitz_location"
+            style="@style/tv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/string_quiz_location" />
+
+        <Button
+            android:id="@+id/create_quitz_arrow_location"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/create_quitz_location"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_topic_next" />
+
+        <TextView
+            android:id="@+id/create_quitz_location_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/create_quitz_location"
+            android:layout_alignBottom="@+id/create_quitz_location"
+            android:layout_toLeftOf="@+id/create_quitz_arrow_location"
+            android:text="Russia, Sochi" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/create_quitz_arrow_add_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/tv_create_quitz_selector"
+        android:paddingRight="10dp"
+        android:text="@string/string_quiz_add_location"
+        android:textSize="12sp" />
+
+</LinearLayout>

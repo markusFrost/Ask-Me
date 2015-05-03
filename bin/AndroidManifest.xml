@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.netsocial_version_1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.example.netsocial.objects.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.netsocial_version_1.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.RegistrationActivity"
+            android:label="@string/title_activity_registration" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.MainPageActivity"
+            android:label="@string/title_activity_main_page" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.MainTopicActivity"
+            android:label="@string/title_activity_main_topic" android:windowSoftInputMode="stateHidden" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.CreateQuizActivity"
+            android:label="@string/title_activity_create_quiz"
+            android:windowSoftInputMode="stateHidden" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial.helps_activities.ChoseTopicActivity"
+            android:label="@string/title_activity_chose_topic" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.TopicDetailsActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale"
+            android:label="@string/title_activity_topic_details" android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.Quiz_Page_Activity"
+            android:label="@string/title_activity_quiz__page_" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.FriendsActivity"
+            android:label="@string/title_activity_friends" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.UserPageActivity"
+            android:label="@string/title_activity_user_page" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.ShowImagesActivity"
+            android:label="@string/title_activity_show_images" >
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.AskCreateQuestionDetailsActivity"
+            android:label="@string/title_activity_ask_create_question_details" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale">
+        </activity>
+        <activity
+            android:name="com.example.netsocial_version_1.UserProfileActivity"
+            android:label="@string/title_activity_user_profile" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+
+    </application>
+
+</manifest>
+
+
+

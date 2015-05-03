@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_deatils_l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"
+        android:background="@drawable/btn_join_selector" >
+
+        <LinearLayout
+            android:id="@+id/topic_deatils_l2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/topic_details_iv_man"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topic_deatils_l3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/topic_deatils_r1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/topic_details_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Mark Credmen"
+                    android:textColor="@color/color_blue"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/topic_details_tv_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/topic_details_tv_name"
+                    android:layout_marginLeft="5dp"
+                    android:text="18 june 2013 17:23"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/topic_details_tv_answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/topic_details_tv_data"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/topic_details_tv_data"
+                    android:text="Answers :"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/topic_details_answers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/topic_details_tv_answers"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/topic_details_tv_answers"
+                    android:text="34"
+                    android:textColor="@color/color_blue"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/topic_details_iv_new_notivic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/topic_details_answers_count"
+                    android:src="@drawable/ic_notiv_new"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topic_deatils_r2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/topic_details_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/topic_deatils_l4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/topic_details_iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

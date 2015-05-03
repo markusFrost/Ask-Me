@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_edit_answer">Please put your answer</string>
+    <string name="str_btn_friends">Friends</string>
+    <string name="str_btn_details">Details</string>
+    <string name="str_btn_achivements">Achivements</string>
+    <string name="str_btn_answers">Answers</string>
+    <string name="str_ad_delete_title">Delete</string>
+    <string name="str_ad_delete_message">Are you shure that you want to delete this photo?</string>
+    <string name="str_ask_all">All</string>
+    <string name="str_ask_family">Family</string>
+    <string name="str_ask_friends">Friends</string>
+    <string name="str_ask_mentions">Mentions</string>
+    <string name="str_ask_edit">Edit</string>
+    <string name="str_btn_Close">Close</string>
+    <string name="str_btn_add">Add</string>
+    
+</resources>

@@ -1,0 +1,286 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/user_settings_profile_scrool_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_blue"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/user_settings_rl_getPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="Profile Photo"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_iv_photo_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_iv_user_photo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="22dp"
+                        android:layout_toLeftOf="@+id/user_settings_profile_iv_photo_arrow"
+                        android:src="@drawable/ic_launcher"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                     android:id="@+id/ user_settings_rl_getName"
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="Name"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_chosed_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_toLeftOf="@+id/user_settings_profile_iv_arrow"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                     android:id="@+id/ user_settings_rl_getStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="Status"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_status_iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_status_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="26dp"
+                        android:layout_toLeftOf="@+id/user_settings_profile_status_iv_arrow" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_blue"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="Country"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_iv_country_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/user_settings_profile_iv_country_arrow"
+                        android:layout_marginRight="25dp"
+                        android:layout_toLeftOf="@+id/user_settings_profile_iv_country_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="Gender"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_iv_arrrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_gender_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/user_settings_profile_iv_arrrow"
+                        android:layout_marginRight="25dp"
+                        android:layout_toLeftOf="@+id/user_settings_profile_iv_arrrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                  android:id="@+id/ user_settings_rl_getBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="Birthday"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/user_settings_profile_birthday_iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="17dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <TextView
+                        android:id="@+id/user_settings_profile_tv_birthday_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="26dp"
+                        android:layout_toLeftOf="@+id/user_settings_profile_birthday_iv_arrow" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/user_settings_profile_btn_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_log_out_selector"
+                android:onClick="onClick"
+                android:text="Log Out"
+                android:textColor="@color/color_show"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

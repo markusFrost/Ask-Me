@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/create_question_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/create_question_rl_chose_topic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_join_selector" >
+
+                <TextView
+                    android:id="@+id/create_question_chose_topic_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:text="@string/string_quiz_chose"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/create_question_chose_topic_iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/right_arrow" />
+
+                <TextView
+                    android:id="@+id/create_question_chose_topic_tv_chosed_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/create_question_chose_topic_iv_arrow"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/create_question_chose_topic_iv_arrow" />
+
+            </RelativeLayout>
+            
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="20dp" >
+
+                
+                 
+                  <FrameLayout
+           
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="2dp" >
+
+           <EditText
+               android:id="@+id/create_question_edit_about"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/btn_join_selector"
+               android:ems="10"
+               android:hint="@string/string_quiz_about"
+               android:inputType="textCapSentences"
+          
+               android:paddingLeft="15dp" >
+
+                     
+                 </EditText>
+
+            <Button
+                android:id="@+id/create_question_clear_about"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:onClick="onClick"
+                android:background="@drawable/ic_clear"
+                 />
+        </FrameLayout>
+
+            </RelativeLayout>
+            
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="70dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="20dp" >
+                  
+                  <FrameLayout
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="3dp"
+                      android:padding="2dp" >
+
+           <EditText
+               android:id="@+id/create_quiz_clear_edit_ask_sms"
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:background="@drawable/btn_join_selector"
+               android:ems="10"
+               android:hint="@string/string_quiz_ask_sms"
+               android:inputType="textMultiLine"
+               android:maxLength="250"
+               android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/create_quiz_clear_ask_sms"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                 android:onClick="onClick"
+                android:background="@drawable/ic_clear"
+                 />
+        </FrameLayout>
+
+                  
+
+            </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="100dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="20dp"
+                  android:background="@drawable/btn_join_selector" >
+
+                  <HorizontalScrollView
+                      android:id="@+id/horizontalScrollView1"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" >
+
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal" >
+
+                          <ImageView
+                              android:id="@+id/create_question_imageView1"
+                              android:layout_width="90dp"
+                              android:layout_height="90dp"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginLeft="10dp"
+                              android:contentDescription="0"
+                              android:onClick="onImageClick"
+                              android:src="@drawable/ic_launcher"
+                              android:visibility="gone" />
+                          
+                           <ImageView
+                               android:id="@+id/create_question_imageView2"
+                               android:layout_width="90dp"
+                               android:layout_height="90dp"
+                               android:layout_gravity="center_vertical"
+                               android:layout_marginLeft="10dp"
+                               android:src="@drawable/ic_launcher"
+                                android:contentDescription="1"
+                              android:onClick="onImageClick"
+                               android:visibility="gone" />
+                           
+                            <ImageView
+                                android:id="@+id/create_question_imageView3"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_launcher"
+                                 android:contentDescription="2"
+                              android:onClick="onImageClick"
+                                android:visibility="gone" />
+                            
+                             <ImageView
+                                 android:id="@+id/create_question_imageView4"
+                                 android:layout_width="90dp"
+                                 android:layout_height="90dp"
+                                 android:layout_gravity="center_vertical"
+                                 android:layout_marginLeft="10dp"
+                                 android:src="@drawable/ic_launcher"
+                                  android:contentDescription="3"
+                              android:onClick="onImageClick"
+                                 android:visibility="gone" />
+                             
+                              <ImageView
+                                  android:id="@+id/create_question_imageView5"
+                                  android:layout_width="90dp"
+                                  android:layout_height="90dp"
+                                  android:layout_gravity="center_vertical"
+                                  android:layout_marginLeft="10dp"
+                                  android:src="@drawable/ic_launcher"
+                                   android:contentDescription="4"
+                              android:onClick="onImageClick"
+                                  android:visibility="gone" />
+                              
+                               <ImageView
+                                   android:id="@+id/create_question_imageView6"
+                                   android:layout_width="90dp"
+                                   android:layout_height="90dp"
+                                   android:layout_gravity="center_vertical"
+                                   android:layout_marginLeft="10dp"
+                                    android:contentDescription="5"
+                              android:onClick="onImageClick"
+                                   android:src="@drawable/ic_launcher"
+                                   android:visibility="gone" />
+
+                               <Button
+                                   android:id="@+id/create_question_btn_AddPhotos"
+                                   android:layout_width="90dp"
+                                   android:layout_height="90dp"
+                                   android:layout_marginLeft="10dp"
+                                   android:layout_marginTop="5dp"
+                                   android:onClick="onClick"
+                                   android:text="+"
+                                   android:textSize="40sp" />
+
+                      </LinearLayout>
+
+                  </HorizontalScrollView>
+
+              </RelativeLayout>
+            
+               <RelativeLayout
+                   android:id="@+id/create_question_rl_ask_chose_category"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="20dp"
+                   android:background="@drawable/btn_join_selector" >
+
+                   <TextView
+                       android:id="@+id/create_question_tv_ask"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginLeft="14dp"
+                       android:text="@string/string_quiz_ask"
+                       android:textSize="20sp" />
+
+                   <ImageView
+                       android:id="@+id/create_question_ask_iv_arrow"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="15dp"
+                       android:src="@drawable/right_arrow" />
+
+                   <TextView
+                       android:id="@+id/create_question_ask_category"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBaseline="@+id/create_question_tv_ask"
+                       android:layout_alignBottom="@+id/create_question_tv_ask"
+                       android:layout_marginRight="14dp"
+                       android:layout_toLeftOf="@+id/create_question_ask_iv_arrow" />
+
+            </RelativeLayout>
+            
+                <RelativeLayout
+                     android:id="@+id/create_question_rl_location_chose"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_join_selector" >
+
+                    <TextView
+                        android:id="@+id/create_question_tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:text="@string/string_quiz_location"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/create_question_iv_location_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/right_arrow" />
+
+                    <TextView
+                        android:id="@+id/create_question_tv_location_chose_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14dp"
+                        android:layout_toLeftOf="@+id/create_question_iv_location_arrow"
+                        android:textSize="15sp" />
+
+            </RelativeLayout>
+
+                <Button
+                    android:id="@+id/create_question_button_add_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_join_selector"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/string_quiz_add_location" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

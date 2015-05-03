@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ask Me</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="string_main_page_enter_login">      Введите Ваш логин или email</string>
+    <string name="string_main_page_enter_password">Введите Ваш пароль</string>
+    <string name="string_main_page_forgott_password">Забыли Ваш пароль?</string>
+    <string name="string_main_page_logo">Logo</string>
+    <string name="string_main_page_invailed_l_or_p">Неправильный логин или Пароль</string>
+    <string name="string_main_page_join_us">Join us</string>
+    <string name="string_registration">Регистрация</string>
+    <string name="string_registration_enter_email">Введите email</string>
+    <string name="string_registration_enter_login">Введите логин</string>
+    <string name="string_registration_enter_password">Введите пароль</string>
+    <string name="string_registration_repeat_password">Повторите пароль</string>
+    <string name="string_registration_btn_submit">Отправить</string>
+    <string name="string_registration_otherPoassw">Пароли не совпадают!</string>
+    <string name="string_topic_ask">Спроси меня</string>
+    <string name="string_topic_all_topic">All 127 Topic</string>
+    <string name="string_topic_friends_asking">Friends Asking</string>
+    <string name="string_topic_det_buisness">Бизнес</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_main_page">MainPageActivity</string>
+    <string name="title_activity_main_topic">MainTopicActivity</string>
+    <string name="str_autorisation">Autorisation</string>
+    <string name="title_activity_create_quiz">CreateQuizActivity</string>
+    <string name="string_quiz_chose">Chose topic</string>
+    <string name="string_quiz_about">About...</string>
+    <string name="string_quiz_ask_sms">Ask Something\nMax 250 symbols</string>
+    <string name="string_quiz_ask">Ask...</string>
+    <string name="string_quiz_location">Location</string>
+    <string name="string_quiz_add_location">Add Location</string>
+    <string name="title_activity_chose_topic">Please Chose the Topic</string>
+    <string name="title_activity_topic_details">TopicDetailsActivity</string>
+    <string name="title_activity_quiz__page_">Quiz</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+    <string name="str_btn_answer">Answer</string>
+    <string name="title_activity_user_page">UserPageActivity</string>
+    <string name="title_activity_show_images">ShowImagesActivity</string>
+    <string name="title_activity_ask_create_question_details">AskCreateQuestionDetailsActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+</resources>

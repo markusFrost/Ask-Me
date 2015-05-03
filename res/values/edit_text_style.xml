@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="editTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        
+          <item name="android:layout_height">wrap_content   </item>
+          
+          <item name="android:layout_marginBottom">10dp   </item>
+          
+          
+          <item name="android:background"> @drawable/edit_selector  </item>
+          
+          
+          <item name="android:ems"> 10  </item>
+          
+           <item name="android:padding">10dp   </item>
+           
+            <item name="android:shadowColor"> @color/color_show  </item>
+            
+             <item name="android:shadowDx"> 0  </item>
+             
+              <item name="android:shadowDy"> 0  </item>
+              
+               <item name="android:shadowRadius"> 5  </item>
+             
+              <item name="android:paddingLeft"> 10dp  </item>
+              
+               <item name="android:singleLine"> true  </item>
+             
+              <item name="android:textSize"> 12sp   </item>
+              
+               
+               
+             
+          
+          
+    </style>
+    
+</resources>
